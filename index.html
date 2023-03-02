@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bookmark</title>
+  </head>
+
+  <body>
+    <section class="container">
+      <header class="my-4 text-secondary">
+        <h3>Bookmarker</h3>
+      </header>
+      <div class="border-top border-bottom border-secondary">
+        <div class="content rounded py-5 my-3">
+          <h4 class="text-center">Bookmark your favorite sites</h4>
+          <div class="inpt text-center mt-5">
+            <h5>Site Name</h5>
+            <input
+              type="text"
+              id="sitename"
+              class="form-control w-75 m-auto"
+              placeholder="Bookmark Name"
+            />
+            <div
+              id="alertname"
+              class="alert alert-danger w-75 m-auto text-start"
+              role="alert"
+            >
+              Not a valid name
+            </div>
+            <div class="valname"></div>
+            <h5 class="mt-5">Site URL</h5>
+            <input
+              type="text"
+              id="siteurl"
+              class="form-control w-75 m-auto"
+              placeholder="website URL"
+            />
+            <div
+              id="alert"
+              class="alert alert-danger w-75 m-auto text-start"
+              role="alert"
+            >
+              For valid URL: https://www.website.com
+            </div>
+            <button id="btnsubmit" class="btn btn-primary mt-4">Submit</button>
+          </div>
+        </div>
+        <div class="output rounded">
+          <div class="search">
+            <input
+              id="searchinput"
+              onkeyup="searchData(this.value)"
+              type="text"
+              placeholder="Search"
+              class="form-control w-50 my-3"
+            />
+          </div>
+          <div class="sitetable mb-4">
+            <div class="row" id="display"></div>
+          </div>
+        </div>
+      </div>
+
+      <footer><p class="mt-4 text-secondary">© 2019 Bookmarker Inc.</p></footer>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

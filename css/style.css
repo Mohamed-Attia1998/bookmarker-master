@@ -1,0 +1,12 @@
+.content,
+.output {
+  background-color: #eeeeee;
+}
+.square {
+  background-color: rgb(215, 214, 222);
+}
+
+#alert,
+#alertname {
+  display: none;
+}
